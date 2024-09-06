@@ -1,0 +1,70 @@
+{
+  "name": "@tw-plugins/extend-aria",
+  "version": "0.1.0",
+  "description": "A Tailwind CSS plugin that extends support for WAI-ARIA 1.2 attributes, providing utility variants for boolean and enumerated ARIA states to enhance accessibility styling.",
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "plugin",
+    "aria",
+    "accessibility",
+    "a11y",
+    "WAI-ARIA",
+    "boolean attributes",
+    "enum attributes",
+    "ARIA states",
+    "CSS",
+    "utility-first",
+    "responsive",
+    "tailwind plugin"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tw-plugins/extend-aria"
+  },
+  "bugs": "https://github.com/tw-plugins/extend-aria/issues",
+  "author": {
+    "name": "Valentin Politov",
+    "url": "https://x.com/politov"
+  },
+  "exports": {
+    "import": {
+      "types": "./dist/es/index.d.mts",
+      "default": "./dist/es/index.mjs"
+    },
+    "require": {
+      "types": "./dist/cjs/index.d.ts",
+      "default": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "bunchee",
+    "release-channel": "node ./scripts/release-channel.js",
+    "release-notes": "node ./scripts/release-notes.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/"
+  ],
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0 || >=4.0.0-alpha.20"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "bunchee": "^5.4.0",
+    "postcss": "^8.4.45",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  }
+}
